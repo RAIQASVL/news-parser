@@ -1,0 +1,37 @@
+{
+  "name": "news-parser",
+  "version": "1.0.0",
+  "description": "News parser with logging and monitoring",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RAIQASVL/news-parser.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RAIQASVL/news-parser/issues"
+  },
+  "homepage": "https://github.com/RAIQASVL/news-parser#readme",
+  "dependencies": {
+    "@prisma/client": "^6.5.0",
+    "axios": "^1.8.3",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-cron": "^3.0.3",
+    "typescript": "^5.8.2",
+    "winston": "^3.17.0"
+  }
+}
